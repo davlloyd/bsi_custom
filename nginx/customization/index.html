@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Promotional page for Tanzu Bitnami Secure Images customisation feature.">
+    <title>Tanzu Bitnami Secure Images | Customization Feature</title>
+    <style>
+        :root {
+            --primary-color: #0091da;
+            --secondary-color: #003a5d;
+            --accent-color: #84b726;
+            --text-color: #333333;
+            --bg-light: #f5f7fa;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .cta-section {
+            background-color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid #e1e4e8;
+        }
+
+        .cta-section h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .reference-box {
+            background-color: #eef5f9;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: left;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .reference-box p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6a931f;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tanzu Bitnami Secure Images</h1>
+        <p>Take full control of your open-source software supply chain with advanced image customization and enterprise-grade hardening.</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2 style="text-align: center; color: var(--secondary-color);">Why Choose the Customisation Feature?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Enterprise Hardening</h3>
+                    <p>Adapt trusted Bitnami images to meet your exact internal security and compliance mandates. Inject custom certificates, define strict user contexts, and strip out unnecessary OS packages before deployment.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Seamless Integration</h3>
+                    <p>Integrate directly into your existing CI/CD pipelines. Automatically pull, customize, and push tailored golden images to your private registries without disrupting developer velocity.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Continuous Compliance</h3>
+                    <p>Maintain your custom configurations across ongoing updates. When underlying open-source components are patched for vulnerabilities, your specific customizations are automatically applied to the new secure builds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Secure Your Workloads?</h2>
+            <p>Deploying hardened, custom open-source images requires a robust infrastructure foundation.</p>
+            
+            <div class="reference-box">
+                <p><strong>Deployment Note:</strong> For comprehensive architectural prerequisites, hardware mapping, and integration details, please refer to the <em>Tanzu Platform with VCF</em> file.</p>
+            </div>
+
+            <a href="#" class="btn">Learn More</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tanzu Platform Environments. Deployed via Nginx.</p>
+    </footer>
+
+</body>
+</html>
